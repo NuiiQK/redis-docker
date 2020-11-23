@@ -20,3 +20,7 @@
 
 [自动重启启动]
 > docker run --restart=always --name redis -p 6379:6379 -v F:\redis\data:/data -d nuiiqk/redis:latest
+
+#进入docker运行环境
+> docker exec -it redis /bin/bash
+> docker exec -it redis redis-cli
