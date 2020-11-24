@@ -1,5 +1,5 @@
 # redis-docker
-* 基于官方最新版redis 创建镜像<br>
+* 基于最新版redis 创建镜像<br>
 * 自定义配置包含<br>
 （1）注释掉bind 127.0.0.1（外网访问）<br>
 （2）添加daemonize no（解决启动报错）<br>
