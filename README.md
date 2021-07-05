@@ -11,7 +11,7 @@
 > mkdir /home/redis/data
 
 [自动重启启动]
-> docker run --restart=always --name redis -p 6379:6379 -v /home/redis/data:/data -d nuiiqk/redis:latest
+> docker run --restart=always --name redis -p 6379:6379 -v /home/redis/data:/data -d nuiiqk/redis:latest [如需设置密码,尾部加上 --requirepass "密码"]
 
 
 # win启动镜像
@@ -19,7 +19,7 @@
 > F:\redis\data
 
 [自动重启启动]
-> docker run --restart=always --name redis -p 6379:6379 -v F:\redis\data:/data -d nuiiqk/redis:latest
+> docker run --restart=always --name redis -p 6379:6379 -v F:\redis\data:/data -d nuiiqk/redis:latest [如需设置密码,尾部加上 --requirepass "密码"]
 
 # 进入docker运行环境
 > docker exec -it redis /bin/bash
