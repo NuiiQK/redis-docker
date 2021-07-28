@@ -8,10 +8,10 @@
 
 # linux启动镜像
 * 新建文件夹用于挂载到容器目录
-> mkdir /home/redis/data
+> mkdir /app/docker/data/redis/data
 
 [自动重启启动]
-> docker run --restart=always --name redis -p 6379:6379 -v /app/docker/data/redis:/data -d nuiiqk/redis:latest [如需设置密码,尾部加上 --requirepass "密码"]
+> docker run --restart=always --name redis -p 6379:6379 -v /app/docker/data/redis/data:/data -d nuiiqk/redis:latest [如需设置密码,尾部加上 --requirepass "密码"]
 
 
 # win启动镜像
@@ -19,7 +19,7 @@
 > F:\redis\data
 
 [自动重启启动]
-> docker run --restart=always --name redis -p 6379:6379 -v F:\redis\data:/data -d nuiiqk/redis:latest [如需设置密码,尾部加上 --requirepass "密码"]
+> docker run --restart=always --name redis -p 6379:6379 -v F:\app\docker\data\redis\data:/data -d nuiiqk/redis:latest [如需设置密码,尾部加上 --requirepass "密码"]
 
 # 进入docker运行环境
 > docker exec -it redis /bin/bash
